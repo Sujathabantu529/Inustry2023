@@ -131,11 +131,16 @@ namespace Industry2023.pages
 
                 IWebElement lastRecordDelete = driver.FindElement(By.XPath("//*[@id=\"tmsGrid\"]/div[3]/table/tbody/tr[last()]/td[5]/a[2]"));
                 lastRecordDelete.Click();
-                Thread.Sleep(5000);
+                Thread.Sleep(8000);
 
                 //Acceptance on Pop up to delete record
-                driver.SwitchTo().Alert().Accept();
 
+                driver.SwitchTo().Alert().Accept();
+                Thread.Sleep(7000);
+                Thread.Sleep(8000);
+            IWebElement deleteRecord = driver.FindElement(By.XPath("//*[@id=\"tmsGrid\"]/div[3]/table/tbody/tr/td[5]/a[2]"));
+            Thread.Sleep(5000);
+            Thread.Sleep(7000);
                 Assert.That(lastRecordDelete.Text != "sujatha1", "Record hasn't been deleted");
             }
         }
