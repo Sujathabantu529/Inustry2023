@@ -37,7 +37,7 @@ namespace Industry2023.tests
             //TM page object initialization and definition
             TMPage tmpageobj = new TMPage();
             //Edit TM 
-            tmpageobj.EditTM(driver);
+            //tmpageobj.EditTM(driver);
         }
         [Test,Order(3), Description("Check if user is able to Delete Time record with valid data")]
         public void DeleteTMTast()

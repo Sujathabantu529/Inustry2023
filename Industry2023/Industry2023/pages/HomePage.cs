@@ -25,5 +25,10 @@ namespace Industry2023.pages
             tmOption.Click();
             Thread.Sleep(1000);
         }
+
+        internal void GoToTMPage(object driver)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
