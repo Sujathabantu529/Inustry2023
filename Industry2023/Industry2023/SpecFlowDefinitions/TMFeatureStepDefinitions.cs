@@ -49,7 +49,7 @@ namespace Industry2023.SpecFlowDefinitions
 
             Assert.That(newCode == "February2023", "Actual code and expected code do not match.");
             Assert.That(newDescription == "February2023", " Actual description and expected description do not match.");
-            Assert.That(newPrice == "12", " Actual price and expected price do not match.");
+            Assert.That(newPrice == "$12.00", " Actual price and expected price do not match.");
         }
         [When(@"I update '([^']*)' on an existing time and material record")]
         public void WhenIUpdateOnAnExistingTimeAndMaterialRecord(string description)
